@@ -3,13 +3,13 @@ class TasksController < ApplicationController
   # GET /tasks.xml
   def index
     @tasks = Task.all
-
+	# For example comment
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @tasks }
     end
   end
-
+  
   # GET /tasks/1
   # GET /tasks/1.xml
   def show
